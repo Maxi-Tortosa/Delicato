@@ -1,0 +1,313 @@
+* {
+	font-family: 'Playfair Display', serif;
+}
+
+.navbar {
+	background: white !important;
+}
+
+.navbar-toggler-icon {
+	color: #007336 !important;
+}
+
+.seccionPrincipal {
+	padding: 0;
+	height: auto;
+}
+
+.banner {
+	padding: 0 !important;
+	height: 100vh;
+	background-image: url('../Img/fondoHomeMobile.svg');
+	background-position: top;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.banner--titulo {
+	text-align: center;
+	margin: 35vh 5% 0 0;
+
+	font-weight: 400;
+	color: white;
+	font-size: 1.87rem;
+	line-height: 2.18rem;
+}
+
+.banner--titulo--cambioDeEstilo {
+	font-family: 'Pacifico', cursive;
+}
+
+.propuesta {
+	background-image: url('../Img/fondoPropuestaMob.svg');
+	background-position: center;
+	background-size: cover;
+	padding: 8.7% 0 7.3% 0;
+}
+
+.propuesta div {
+	margin-top: 4.3%;
+}
+
+.propuesta div h2 {
+	color: #4f4f4f;
+	font-size: 1.56rem;
+	line-height: 2.37rem;
+}
+
+.ventajas {
+	padding: 11.1% 0 24.55% 0;
+	background-image: url('../Img/fondoVentajasMob.png');
+	background-position: center;
+	background-size: cover;
+	color: white;
+}
+
+.ventajas h1 {
+	margin-bottom: 5%;
+	font-size: 1.56rem;
+	line-height: 127%;
+	text-align: center;
+}
+
+.ventajas ul {
+	margin: 0 18% 0 18%;
+	padding: 0;
+	list-style-type: none;
+	list-style-position: inside;
+}
+
+.ventajas ul hr {
+	width: 20%;
+	height: 3px;
+	margin: 0 auto 7% auto;
+	opacity: 1;
+	background-color: #007336;
+}
+
+.ventajas ul li {
+	font-size: 1rem;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	line-height: 1.25rem;
+	text-align: center;
+	margin: 3% 0 5% 0;
+}
+
+.ventajas ul li span {
+	font-weight: 700;
+}
+
+.sabores {
+	background-image: url('../Img/fondoSaboresMob.png');
+	background-position: center;
+	background-size: cover;
+	margin: 8.33% 0 13.88% 0;
+	color: #4f4f4f !important;
+}
+
+.sabores h3 {
+	text-align: center;
+	font-size: 1.87rem;
+	line-height: 127%;
+	text-transform: uppercase;
+	margin-bottom: 7%;
+}
+
+.card {
+	margin: 5% auto 2% auto;
+	width: 80%;
+	border-radius: 10px !important;
+	box-shadow: 0px 4px 7px #e5e5e5 !important;
+}
+
+.card-body {
+	margin: 2% 0 5% 0;
+	padding: 0;
+}
+
+.accordion {
+	width: 100% !important;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.accordion-item {
+	width: 100% !important;
+	margin: 0 !important;
+}
+
+.accordion-button {
+	padding: 0 !important;
+	font-size: 1.87rem;
+	color: #4f4f4f !important;
+}
+
+.accordion-button::after {
+	margin-left: 8% !important;
+}
+.accordion-body {
+	padding: 7% 5% 0 5% !important;
+}
+.accordion-body ul {
+	padding: 0 !important;
+}
+
+.accordion-body ul li {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 0.8rem;
+	margin-bottom: 4%;
+	list-style-type: none;
+}
+
+.accordion-body ul li:before {
+	content: '';
+	display: inline-block;
+	height: 15px;
+	width: 18px;
+	background-image: url('../Img/iconoSabores.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.fondoConSuc {
+	background-image: url('../Img/fondoConSuc.png');
+	background-position: center;
+	background-size: cover;
+}
+
+.contacto {
+	color: #4f4f4f;
+	padding: 0;
+	margin: 0 0 13.88% 0;
+}
+
+.contacto h3 {
+	text-transform: uppercase;
+	font-size: 1.87rem;
+	line-height: 127%;
+	text-align: center;
+	margin: 0 0 4% 0;
+}
+
+.contacto p {
+	margin: 0 auto 8% auto;
+	font-size: 0.875rem;
+	width: 70%;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.contacto form {
+	display: flex;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.contacto form input,
+.contacto form textarea {
+	width: 70%;
+	border-width: 0 0 1px 0;
+	border-color: #bdbdbd;
+	background: transparent;
+	margin: 0 auto 6% auto;
+	padding: 0;
+}
+
+.contacto form input:focus,
+.contacto form textarea:focus {
+	border: 2px solid #007336;
+	border-radius: 5px;
+	outline: none;
+}
+
+#contactoButton {
+	width: 30%;
+	margin: 8% auto 0 auto;
+	padding: 3% 0 3% 0;
+	border-radius: 20px;
+	border: unset;
+	background: #a10082;
+	font-size: 0.875rem;
+	line-height: 107%;
+	color: white;
+}
+
+.sucursales {
+	padding: 0;
+	margin: 0 0 13.88% 0;
+	color: #4f4f4f;
+}
+
+.sucursales h3 {
+	text-transform: uppercase;
+	font-size: 1.87rem;
+	line-height: 127%;
+	text-align: center;
+	margin: 0 0 4% 0;
+}
+.sucursales p {
+	width: 70%;
+	margin: 0 auto 0 auto;
+	font-size: 0.875rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.sucursales p span {
+	margin-bottom: 2%;
+}
+
+.sucursales p span,
+.sucursales p span b {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 107%;
+	text-align: justify;
+}
+
+#mapa {
+	width: 70%;
+	margin: 4% auto 0 auto;
+	overflow: hidden;
+}
+
+.pie {
+	background-image: url('../Img/fondoPie.png');
+	background-position: center;
+	background-size: cover;
+	padding: 7.7% 7.7% 0 7.7%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.pie ul {
+	color: white;
+	font-weight: 400;
+	list-style-type: none;
+	padding: 0;
+	margin-bottom: 8%;
+}
+
+.redes ul li {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.redes ul li a {
+	margin-right: 4%;
+}
+
+.redes ul li,
+.menuPie ul li {
+	margin-bottom: 3%;
+}
+
+.menuPie ul li a,
+.redes ul li span,
+.pie ul p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1rem;
+	line-height: 105%;
+}
