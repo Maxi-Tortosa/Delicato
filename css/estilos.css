@@ -356,6 +356,7 @@
 
 	.navbar .container-fluid {
 		max-width: 1440px;
+		width: 90%;
 	}
 
 	.navbar .navbar-brand {
@@ -373,6 +374,7 @@
 	}
 
 	.banner {
+		width: 90%;
 		max-width: 1440px;
 		background-image: url('../Img/fondoHomeDesktop.png');
 		background-position: 0 7.5%;
@@ -401,7 +403,8 @@
 		display: flex;
 		flex-direction: row;
 		margin: 0 auto;
-		max-width: 1440;
+		max-width: 1440px;
+		width: 90%;
 	}
 
 	.propuestasVentajasDesktop__contenedor {
@@ -489,6 +492,7 @@
 	/* Sabores */
 
 	.sabores {
+		width: 90%;
 		max-width: 1440px;
 		display: flex;
 		flex-direction: column;
@@ -566,6 +570,7 @@
 	.fondoConSuc {
 		display: flex;
 		background: none;
+		width: 90%;
 		max-width: 1440px;
 		margin: 0 auto;
 	}
