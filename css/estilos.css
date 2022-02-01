@@ -350,6 +350,10 @@
 /* --------------------------------------------------- ADAPTACIÓN DESKTOP -------------------------------------------------------- */
 
 @media screen and (min-width: 992px) {
+	.navbar {
+		background: white !important;
+	}
+
 	.navbar .container-fluid {
 		max-width: 1440px;
 	}
@@ -373,6 +377,7 @@
 		background-image: url('../Img/fondoHomeDesktop.png');
 		background-position: 0 7.5%;
 		background-size: cover;
+		height: 100%;
 	}
 
 	.banner__fondo {
@@ -380,7 +385,7 @@
 	}
 
 	.banner__fondo h3 {
-		margin: 30% 0 0 5%;
+		margin: 30% 0 30% 5%;
 		font-size: 6.25rem;
 		line-height: 6.875rem;
 	}
@@ -623,19 +628,18 @@
 	/* FOOTER */
 
 	.pie {
-		max-width: 1440px;
 		background-image: url('../Img/fondoPieDesktop.png');
 		background-position: top left;
 		background-size: cover;
-		padding-top: 1.8%;
-		padding-bottom: 1.8%;
+		padding: 2% 0 2% 0;
+		max-width: 100% !important	;
 	}
 
 	.menuPie ul {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-		width: 60%;
+		max-width: 36%;
 		margin: 0 auto 0 auto;
 	}
 
@@ -652,7 +656,7 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-		width: 82%;
+		width: 50%;
 		margin: 0 auto 0 auto;
 	}
 
