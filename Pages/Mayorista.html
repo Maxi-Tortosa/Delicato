@@ -14,23 +14,38 @@
 		/>
 		<!-- fin Bootstrap -->
 
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Pacifico&family=Playfair+Display:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- fin Google Fonts -->
+
 		<!-- CSS -->
-		<link rel="stylesheet" href="../css/estilosMayorista.css" />
+		<link rel="stylesheet" href="../css/estilos.css" />
 		<!-- fin CSS -->
 
-		<link rel="shortcut icon" href="../Img/logo.jpeg" type="image/x-icon" />
+		<link
+			rel="shortcut icon"
+			href="../Img/logoDelicatoMob.svg"
+			type="image/x-icon"
+		/>
 		<title>Home | Delicatto Helados Artesanales</title>
 	</head>
 	<body>
 		<!-- HEADER -->
-
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<nav class="fixed-top navbar navbar-expand-lg navbar-light bg-light">
 			<div class="container-fluid">
-				<a class="navbar-brand" href="#"
-					><img width="150px" src="../Img/logo.jpeg" alt="Imagen del logo"
+				<a class="navbar-brand" href="../index.html"
+					><img
+						width="100%"
+						src="../Img/logoDelicatoMob.svg"
+						alt="Imagen del logo"
 				/></a>
 				<button
-					class="navbar-toggler"
+					class="navbar-toggler border-0 link-success"
 					type="button"
 					data-bs-toggle="collapse"
 					data-bs-target="#navbarNav"
@@ -43,21 +58,18 @@
 				<div class="collapse navbar-collapse" id="navbarNav">
 					<ul class="navbar-nav">
 						<li class="nav-item">
-							<a class="nav-link" href="../index.html">Home</a>
+							<a class="nav-link" aria-current="page" href="../index.html"
+								>Home</a
+							>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="./Nosotros.html">Nosotros</a>
 						</li>
 						<li class="nav-item">
-							<a
-								class="nav-link active"
-								aria-current="page"
-								href="./Mayorista.html"
-								>Mayorista</a
-							>
+							<a class="nav-link active" href="./Mayorista.html">Mayorista</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="./Contacto.html">Contacto</a>
+							<a class="nav-link" href="#tituloContacto">Contacto</a>
 						</li>
 					</ul>
 				</div>
@@ -65,26 +77,41 @@
 		</nav>
 
 		<!-- MAIN -->
-		<main>
-			<section><h1>Mayorista</h1></section>
-		</main>
+
+		<div class="container-fluid d-flex align-items-center" style="height: 50vh">
+			<h1>Mayorista</h1>
+		</div>
+
 		<!-- FOOTER -->
 
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col d-flex justify-content-center align-items-center">
-					<img width="200px" src="../Img/logo.jpeg" alt="" />
-				</div>
-				<div class="col"></div>
-				<div class="col-3 d-flex justify-content-center align-items-center">
-					<a href="http://"
-						><img width="40px" src="../Img/faceIcon.ico" alt="Ícono Facebook" />
-					</a>
-
-					<a href="http://"
-						><img width="40px" src="../Img/instaIcon.ico" alt="Ícono Instagram"
-					/></a>
-				</div>
+		<div class="container-fluid pie">
+			<div class="menuPie">
+				<ul>
+					<li><a>Home</a></li>
+					<li><a>Nosotros</a></li>
+					<li><a>Mayoristas</a></li>
+					<li><a href="#tituloContacto">Contactanos</a></li>
+				</ul>
+			</div>
+			<div class="redes">
+				<ul>
+					<p>Encontranos en:</p>
+					<li>
+						<a href=""><img src="./Img/iconoUbi.svg" alt="Ubicación" /></a>
+						<span>Av gral Mosconi 653 - Ciudad de Córdoba, Argentina</span>
+					</li>
+					<li>
+						<a href="https://www.instagram.com/delicatook/" target="_blank"
+							><img src="./Img/iconoInsta.svg" alt="Ubicación" /> </a
+						><span>delicatook</span>
+					</li>
+					<li>
+						<a href="" target="_blank"
+							><img src="./Img/iconoFace.svg" alt="Ubicación"
+						/></a>
+						<span>delicatoheladeria</span>
+					</li>
+				</ul>
 			</div>
 		</div>
 

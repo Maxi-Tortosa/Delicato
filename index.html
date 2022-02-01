@@ -27,7 +27,11 @@
 		<link rel="stylesheet" href="./css/estilos.css" />
 		<!-- fin CSS -->
 
-		<link rel="shortcut icon" href="./Img/logo.jpeg" type="image/x-icon" />
+		<link
+			rel="shortcut icon"
+			href="./Img/logoDelicatoMob.svg"
+			type="image/x-icon"
+		/>
 		<title>Home | Delicatto Helados Artesanales</title>
 	</head>
 	<body>
@@ -51,8 +55,11 @@
 				>
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<div class="collapse navbar-collapse" id="navbarNav">
-					<ul class="navbar-nav">
+				<div
+					class="collapse navbar-collapse d-lg-flex justify-content-lg-center"
+					id="navbarNav"
+				>
+					<ul class="navbar-nav d-lg-flex justify-content-lg-between">
 						<li class="nav-item">
 							<a class="nav-link active" aria-current="page" href="index.html"
 								>Home</a
@@ -65,7 +72,7 @@
 							<a class="nav-link" href="./Pages/Mayorista.html">Mayorista</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="./Pages/Contacto.html">Contacto</a>
+							<a class="nav-link" href="#tituloContacto">Contacto</a>
 						</li>
 					</ul>
 				</div>
@@ -77,35 +84,24 @@
 		<div class="container-fluid seccionPrincipal">
 			<!-- Banner -->
 
-			<div
-				class="
-					banner
-					container-fluid
-					d-flex
-					align-items-start
-					justify-content-end
-				"
-			>
-				<h3 class="banner--titulo">
-					Re descubrí <br />
-					<span class="banner--titulo--cambioDeEstilo"
-						>el sabor <br />
-						del helado</span
-					>
-				</h3>
+			<div class="banner container-fluid">
+				<div
+					class="banner__fondo container-fluid d-flex align-items-start justify-content-end justify-content-xl-start"
+				>
+					<h3 class="banner__fondo--titulo">
+						Re descubrí <br />
+						<span class="banner__fondo--titulo--cambioDeEstilo"
+							>el sabor <br />
+							del helado</span
+						>
+					</h3>
+				</div>
 			</div>
 
 			<!-- Propuesta de valor -->
 
 			<div
-				class="
-					propuesta
-					container-fluid
-					d-flex
-					flex-column
-					align-items-center
-					justify-content-center
-				"
+				class="container-fluid d-flex flex-column align-items-center justify-content-center propuesta"
 			>
 				<div
 					class="d-flex flex-column align-items-center justify-content-center"
@@ -159,14 +155,66 @@
 				</ul>
 			</div>
 
+			<!-- Propuesta de valor y Ventajas DESKTOP-->
+
+			<div class="propuestasVentajasDesktop">
+				<div class="propuestasVentajasDesktop__contenedor">
+					<div class="propuestasVentajasDesktop__contenedor__ventajasDesktop">
+						<h1 class="">¿POR QUÉ DELICATO?</h1>
+						<ul class="">
+							<li>
+								Ingredientes
+								<span>frescos, naturales y de calidad</span>
+							</li>
+
+							<li>
+								No contiene
+								<span>conservantes, saborizantes y colorantes</span>
+								artificiales
+							</li>
+
+							<li>Desarrollo de sabores ilimitado</li>
+
+							<li>Poca cantidad de aire (mayor calidad)</li>
+
+							<li>
+								Elaboración a base de crema de leche
+								<span>(sabores a la crema)</span>
+							</li>
+
+							<li>Fabricación <span>sin Grasa</span></li>
+						</ul>
+					</div>
+
+					<div class="propuestasVentajasDesktop__contenedor__propuestaDesktop">
+						<div class="">
+							<img
+								src="Img/iconoFabricacionM.png"
+								alt="icono Fabricación Artesanal"
+							/>
+							<h2>Fabricación artesanal</h2>
+						</div>
+						<div class="">
+							<img src="Img/iconoSaboresM.png" alt="icono 45 sabores" />
+							<h2>45 sabores</h2>
+						</div>
+						<div class="">
+							<img src="Img/iconoCalidadM.png" alt="icono Primera calidad" />
+							<h2>Primera calidad</h2>
+						</div>
+					</div>
+				</div>
+				<div class="fondoVentajasPropuestaDesktop"></div>
+			</div>
+
 			<!-- Sabores -->
 
 			<div class="container-fluid sabores">
 				<h3>sabores</h3>
 
-				<!-- card1 -->
+				<!-- card1 Mobile-->
 
-				<div class="card" style="width: 18rem">
+				<div class="card cardMobile" style="width: 18rem">
 					<img
 						src="./Img/fotoCard1.png"
 						class="card-img-top"
@@ -180,12 +228,7 @@
 							<div class="accordion-item">
 								<h2 class="accordion-header" id="flush-heading1">
 									<button
-										class="
-											accordion-button
-											collapsed
-											d-flex
-											justify-content-center
-										"
+										class="accordion-button collapsed d-flex justify-content-center"
 										type="button"
 										data-bs-toggle="collapse"
 										data-bs-target="#flush-collapse1"
@@ -225,9 +268,9 @@
 					</div>
 				</div>
 
-				<!-- card2 -->
+				<!-- card2 Mobile-->
 
-				<div class="card" style="width: 18rem">
+				<div class="card cardMobile" style="width: 18rem">
 					<img
 						src="./Img/fotoCard2.png"
 						class="card-img-top"
@@ -241,12 +284,7 @@
 							<div class="accordion-item">
 								<h2 class="accordion-header" id="flush-heading2">
 									<button
-										class="
-											accordion-button
-											collapsed
-											d-flex
-											justify-content-center
-										"
+										class="accordion-button collapsed d-flex justify-content-center"
 										type="button"
 										data-bs-toggle="collapse"
 										data-bs-target="#flush-collapse2"
@@ -289,9 +327,9 @@
 					</div>
 				</div>
 
-				<!-- card3 -->
+				<!-- card3 Mobile-->
 
-				<div class="card" style="width: 18rem">
+				<div class="card cardMobile" style="width: 18rem">
 					<img
 						src="./Img/fotoCard3.png"
 						class="card-img-top"
@@ -305,12 +343,7 @@
 							<div class="accordion-item">
 								<h2 class="accordion-header" id="flush-heading3">
 									<button
-										class="
-											accordion-button
-											collapsed
-											d-flex
-											justify-content-center
-										"
+										class="accordion-button collapsed d-flex justify-content-center"
 										type="button"
 										data-bs-toggle="collapse"
 										data-bs-target="#flush-collapse3"
@@ -347,15 +380,104 @@
 						</div>
 					</div>
 				</div>
+
+				<!-- card1 Desktop -->
+
+				<div class="cardsDesktop">
+					<div class="card cardDesktop">
+						<img
+							src="./Img/fotoCard1.png"
+							class="card-img-center"
+							alt="Sabores tradicionales"
+						/>
+						<div class="card-body">
+							<h2 class="card-title">Tradicionales</h2>
+
+							<ul>
+								<li>Americana</li>
+								<li>Crema del Cielo</li>
+								<li>Chocolate</li>
+								<li>Dulce de Leche</li>
+								<li>Frutilla a la Crema</li>
+								<li>FRAMBUESA</li>
+								<li>Limón</li>
+								<li>Frutilla</li>
+								<li>KIWI</li>
+								<li>Naranja</li>
+								<li>MANGO</li>
+								<li>Vainilla</li>
+								<li>Manzana</li>
+								<li>Verde</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- card2 Desktop -->
+
+					<div class="card cardDesktop">
+						<img
+							src="./Img/fotoCard2.png"
+							class="card-img-center"
+							alt="Sabores tradicionales"
+						/>
+						<div class="card-body">
+							<h2 class="card-title">Especiales</h2>
+
+							<ul>
+								<li>Banana Split</li>
+								<li>Cereza A LA PANNA</li>
+								<li>Chantilly con Frutilla</li>
+								<li>Chocolate Bariloche</li>
+								<li>Chocolate Blanco</li>
+								<li>CHOCOLATE AMARGO</li>
+								<li>MARACUYÁ</li>
+								<li>Coco CON Dulce de Leche</li>
+								<li>Dulce de Leche Granizado</li>
+								<li>Ananá</li>
+								<li>Durazno</li>
+
+								<li>Y más ...</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- card3 Desktop -->
+
+					<div class="card cardDesktop">
+						<img
+							src="./Img/fotoCard3.png"
+							class="card-img-center"
+							alt="Sabores tradicionales"
+						/>
+						<div class="card-body">
+							<h2 class="card-title">Premium</h2>
+
+							<ul>
+								<li>Quinotos al Whisky</li>
+								<li>Chocolate con Almendras</li>
+								<li>Chocolate con Nuez</li>
+								<li>Chocolate DE LA CASA</li>
+								<li>Dulce de Leche Bombon</li>
+								<li>CHOCOTORTA</li>
+								<li>MASCARPONE CON Frutos ROJOS</li>
+								<li>CREMA RUSA</li>
+								<li>Sambayón</li>
+								<li>Tramontana</li>
+								<li>Tiramisú</li>
+								<li>Mantecol</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 			</div>
 
 			<div class="fondoConSuc">
 				<!-- Contacto -->
 				<div class="container-fluid contacto">
-					<h3>Contacto</h3>
+					<h3 id="tituloContacto">Contacto</h3>
 					<p>
-						Contanos tus dudas e inquietudes y<br />te responderemos a la
-						brevedad.
+						Contanos tus dudas e inquietudes y<br class="salto" />te
+						responderemos a la brevedad.
 					</p>
 					<form action="">
 						<label for="nombreApellido"></label>
@@ -380,7 +502,7 @@
 					<p>
 						<span> <b>Teléfono:</b> 0351-153623595</span>
 						<span
-							><b>Dirección:</b> Av. General Mosconi 653 <br />
+							><b>Dirección:</b> Av. General Mosconi 653 <br class="salto" />
 							B° Panamericano - Córdoba Capital</span
 						>
 					</p>
@@ -400,20 +522,20 @@
 
 		<!-- FOOTER -->
 
-		<div class="container-fluid pie">
+		<div class="container-fluid container-xxl pie">
 			<div class="menuPie">
 				<ul>
 					<li><a>Home</a></li>
 					<li><a>Nosotros</a></li>
 					<li><a>Mayoristas</a></li>
-					<li><a>Contactanos</a></li>
+					<li><a href="#tituloContacto">Contactanos</a></li>
 				</ul>
 			</div>
 			<div class="redes">
 				<ul>
-					<p>Encontranos en:</p>
+					<p class="encontranos">Encontranos en:</p>
 					<li>
-						<a href="#mapa"><img src="./Img/iconoUbi.svg" alt="Ubicación" /></a>
+						<a href=""><img src="./Img/iconoUbi.svg" alt="Ubicación" /></a>
 						<span>Av gral Mosconi 653 - Ciudad de Córdoba, Argentina</span>
 					</li>
 					<li>

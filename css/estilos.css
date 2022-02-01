@@ -2,18 +2,26 @@
 	font-family: 'Playfair Display', serif;
 }
 
+/* --------------------------------------------------- MOBILE FIRST -------------------------------------------------------- */
+
+/* HEADER */
+
 .navbar {
-	background: white !important;
+	background: transparent !important;
 }
 
 .navbar-toggler-icon {
 	color: #007336 !important;
 }
 
+/* SECCIÓN PRINCIPAL */
+
 .seccionPrincipal {
 	padding: 0;
 	height: auto;
 }
+
+/* Baner */
 
 .banner {
 	padding: 0 !important;
@@ -24,18 +32,26 @@
 	background-repeat: no-repeat;
 }
 
-.banner--titulo {
+.banner__fondo {
+	height: auto;
+}
+.banner__fondo--titulo {
 	text-align: center;
-	margin: 35vh 5% 0 0;
-
+	margin: 29vh 3% 55% 0;
 	font-weight: 400;
 	color: white;
 	font-size: 1.87rem;
 	line-height: 2.18rem;
 }
 
-.banner--titulo--cambioDeEstilo {
+.banner__fondo--titulo--cambioDeEstilo {
 	font-family: 'Pacifico', cursive;
+}
+
+/* Propuesta */
+
+.propuestasVentajasDesktop {
+	display: none; /* SE OCULTA CONTENEDOR EN MOBILE*/
 }
 
 .propuesta {
@@ -54,6 +70,8 @@
 	font-size: 1.56rem;
 	line-height: 2.37rem;
 }
+
+/* Ventajas */
 
 .ventajas {
 	padding: 11.1% 0 24.55% 0;
@@ -98,11 +116,15 @@
 	font-weight: 700;
 }
 
+/* Sabores */
+
 .sabores {
 	background-image: url('../Img/fondoSaboresMob.png');
-	background-position: center;
-	background-size: cover;
-	margin: 8.33% 0 13.88% 0;
+	background-position: top;
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding: 8.33% 0 0 0;
+	margin: 0 0 13.88% 0;
 	color: #4f4f4f !important;
 }
 
@@ -112,6 +134,10 @@
 	line-height: 127%;
 	text-transform: uppercase;
 	margin-bottom: 7%;
+}
+
+.cardsDesktop {
+	display: none; /*Se ocultan las cards de desktop*/
 }
 
 .card {
@@ -171,10 +197,13 @@
 	background-repeat: no-repeat;
 }
 
+/* Contacto y Sucursales */
+
 .fondoConSuc {
 	background-image: url('../Img/fondoConSuc.png');
 	background-position: center;
-	background-size: cover;
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
 .contacto {
@@ -271,6 +300,8 @@
 	overflow: hidden;
 }
 
+/* FOOTER */
+
 .pie {
 	background-image: url('../Img/fondoPie.png');
 	background-position: center;
@@ -289,6 +320,10 @@
 	margin-bottom: 8%;
 }
 
+.menuPie ul li a {
+	text-decoration: none;
+	color: white;
+}
 .redes ul li {
 	display: flex;
 	flex-direction: row;
@@ -310,4 +345,324 @@
 	font-family: 'Montserrat', sans-serif;
 	font-size: 1rem;
 	line-height: 105%;
+}
+
+/* --------------------------------------------------- ADAPTACIÓN DESKTOP -------------------------------------------------------- */
+
+@media screen and (min-width: 992px) {
+	.navbar .container-fluid {
+		max-width: 1440px;
+	}
+
+	.navbar .navbar-brand {
+		width: 12%;
+		margin-left: 2%;
+	}
+
+	.navbar-nav {
+		font-size: 1rem;
+		width: 45%;
+	}
+
+	.navbar-nav li a {
+		font-family: 'Montserrat', sans-serif;
+	}
+
+	.banner {
+		max-width: 1440px;
+		background-image: url('../Img/fondoHomeDesktop.png');
+		background-position: 0 7.5%;
+		background-size: cover;
+	}
+
+	.banner__fondo {
+		max-width: 1440px;
+	}
+
+	.banner__fondo h3 {
+		margin: 30% 0 0 5%;
+		font-size: 6.25rem;
+		line-height: 6.875rem;
+	}
+
+	/* Ventajas-Propuesta*/
+
+	.ventajas,
+	.propuesta {
+		display: none !important; /* SE OCULTA CONTENEDOR EN MOBILE*/
+	}
+
+	.propuestasVentajasDesktop {
+		display: flex;
+		flex-direction: row;
+		margin: 0 auto;
+		max-width: 1440;
+	}
+
+	.propuestasVentajasDesktop__contenedor {
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+		max-width: 720px;
+		margin: 0 0 0 auto;
+		padding: 3% 0 3% 0;
+		background-color: #70055b;
+		color: white;
+	}
+
+	.propuestasVentajasDesktop__contenedor__ventajasDesktop h1 {
+		font-size: 1.87rem;
+		line-height: 187%;
+		text-align: center;
+		font-weight: 300;
+		margin-bottom: 3%;
+	}
+
+	.propuestasVentajasDesktop__contenedor__ventajasDesktop ul {
+		padding: 0 !important;
+		width: 80%;
+		margin: 0 auto 5% auto;
+		margin-bottom: 5%;
+	}
+
+	.propuestasVentajasDesktop__contenedor__ventajasDesktop ul li {
+		margin-bottom: 3%;
+		font-size: 1rem;
+		list-style-type: none;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 300;
+		text-align: center;
+	}
+
+	.propuestasVentajasDesktop__contenedor__ventajasDesktop ul li:before {
+		content: '';
+		display: inline-block;
+		width: 27px;
+		height: 22px;
+		background-image: url('../Img/iconoSabores.svg');
+		background-size: contain;
+		background-repeat: no-repeat;
+		margin-bottom: -7px;
+	}
+
+	.propuestasVentajasDesktop__contenedor__ventajasDesktop ul li span {
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 600;
+	}
+
+	.fondoVentajasPropuestaDesktop {
+		background-image: url('../Img/fontoPropuestaVentajasDesktop.png');
+		width: 50%;
+		max-width: 720px;
+		margin: 0 auto 0 0;
+		background-position: top;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.propuestasVentajasDesktop__contenedor__propuestaDesktop {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 1%;
+	}
+
+	.propuestasVentajasDesktop__contenedor__propuestaDesktop div {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 3%;
+	}
+
+	.propuestasVentajasDesktop__contenedor__propuestaDesktop div h2 {
+		color: white;
+		font-size: 1.56rem;
+		line-height: 2.37rem;
+		margin: 0;
+	}
+
+	/* Sabores */
+
+	.sabores {
+		max-width: 1440px;
+		display: flex;
+		flex-direction: column;
+		background: none;
+		margin: 0 auto 2% auto;
+		padding: 3% 0 1.5% 0;
+	}
+
+	.sabores h3 {
+		text-align: start;
+		margin: 0 0 4.5% 7.5%;
+		font-size: 2.2rem;
+	}
+
+	.cardMobile {
+		display: none;
+	}
+
+	.cardsDesktop {
+		width: 63.5%;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.cardsDesktop .cardDesktop {
+		width: 30.5%;
+		margin: 0 0;
+	}
+
+	.cardsDesktop .cardDesktop img {
+		height: 100.94px;
+	}
+
+	.cardsDesktop .cardDesktop .card-body {
+		display: flex;
+		flex-direction: column;
+		padding: 10% 0 6% 0;
+	}
+
+	.cardsDesktop .cardDesktop .card-body h2 {
+		text-align: center;
+	}
+
+	.cardsDesktop .cardDesktop .card-body ul {
+		width: 80%;
+		padding: 0;
+		margin: 5% auto 0 auto;
+	}
+
+	.cardsDesktop .cardDesktop .card-body ul li {
+		text-align: center;
+		text-transform: uppercase;
+		margin-bottom: 7%;
+		font-size: 0.875rem;
+		list-style-type: none;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 300;
+	}
+
+	.cardsDesktop .cardDesktop .card-body ul li:before {
+		content: '';
+		display: inline-block;
+		width: 27px;
+		height: 22px;
+		background-image: url('../Img/iconoSabores.svg');
+		background-size: contain;
+		background-repeat: no-repeat;
+		margin-bottom: -7px;
+	}
+
+	/* Contacto  y Sucursales*/
+
+	.fondoConSuc {
+		display: flex;
+		background: none;
+		max-width: 1440px;
+		margin: 0 auto;
+	}
+
+	/* Contacto */
+
+	.contacto {
+		background-image: url('../Img/fondoContactoDesktop.png');
+		background-repeat: no-repeat;
+		background-position: left center;
+		margin: 0;
+		padding: 0 0 14% 0;
+	}
+
+	.contacto h3 {
+		margin: 0 0 3% 15%;
+	}
+
+	.contacto p {
+		margin: 0 auto 4% auto;
+	}
+
+	.salto {
+		display: none;
+	}
+
+	#tituloContacto {
+		text-align: left;
+	}
+
+	#contactoButton {
+		align-self: flex-end;
+		margin: 0;
+		padding: 1.4% 4.2%;
+		font-size: 0.875rem;
+		width: auto;
+		margin-right: 15%;
+	}
+
+	/* Sucursales */
+
+	.sucursales {
+		background-image: url('../Img/fondoSucursalesDesktop.png');
+		background-repeat: no-repeat;
+		background-position: right bottom;
+		padding: 0 0 14% 0;
+		margin: 0;
+	}
+
+	.sucursales h3 {
+		text-align: left;
+		margin: 0 0 3% 15%;
+	}
+
+	#mapa iframe {
+		width: 23.68rem;
+		height: 17.12rem;
+	}
+
+	/* FOOTER */
+
+	.pie {
+		max-width: 1440px;
+		background-image: url('../Img/fondoPieDesktop.png');
+		background-position: top left;
+		background-size: cover;
+		padding-top: 1.8%;
+		padding-bottom: 1.8%;
+	}
+
+	.menuPie ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 60%;
+		margin: 0 auto 0 auto;
+	}
+
+	.menuPie ul li {
+		font-weight: 300;
+		font-size: 1rem;
+	}
+
+	.encontranos {
+		display: none;
+	}
+
+	.redes ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 82%;
+		margin: 0 auto 0 auto;
+	}
+
+	.redes ul li {
+		font-size: 1rem;
+		margin-bottom: 0;
+		font-weight: 300;
+	}
+
+	.redesul li:nth-child(1) {
+		width: 100%;
+	}
 }
