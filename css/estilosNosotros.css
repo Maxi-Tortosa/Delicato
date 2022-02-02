@@ -1,2 +1,44 @@
 * {
+	font-family: 'Playfair Display', serif;
+}
+
+/* --------------------------------------------------- MOBILE FIRST -------------------------------------------------------- */
+
+.seccionPrincipalNosotros {
+	padding: 0;
+}
+
+.bannerNosotros {
+	height: 16rem;
+	background-image: url('../Img/fondoBannerNosotros.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.textoNosotros {
+	background-image: url('../Img/fondoTextoNosotros.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	padding: 5% 7.5% 13% 7.5%;
+}
+
+.textoNosotros h3,
+.textoNosotros p {
+	background-color: white;
+}
+
+.textoNosotros h3 {
+	font-size: 1.875rem;
+	line-height: 127%;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0 0 4% 0;
+}
+
+.textoNosotros p {
+	font-family: 'Montserrat', sans-serif;
+	text-align: justify;
+	font-size: 1rem;
+	line-height: 1.25rem;
+	margin: 0 0 5.5% 0;
 }
