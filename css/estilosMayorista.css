@@ -1,2 +1,34 @@
 * {
+	font-family: 'Playfair Display', serif;
+}
+
+/* --------------------------------------------------- MOBILE FIRST -------------------------------------------------------- */
+
+.seccionPrincipalMayoristas {
+	padding: 5% 8% 5% 8%;
+	margin: 20% 0 0 0;
+}
+
+.seccionPrincipalMayoristas p,
+.seccionPrincipalMayoristas h3 {
+	color: #333333;
+}
+
+.seccionPrincipalMayoristas p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1rem;
+	line-height: 1.25rem;
+	margin: 0 0 10% 0;
+}
+
+.card {
+	margin: 5% 0 2% 0;
+}
+
+.seccionPrincipalMayoristas h3:nth-child(6) {
+	margin-top: 10%;
+}
+
+.accordion-body p {
+	text-align: center;
 }

@@ -147,6 +147,10 @@
 	box-shadow: 0px 4px 7px #e5e5e5 !important;
 }
 
+.card img {
+	height: 7rem;
+}
+
 .card-body {
 	margin: 2% 0 5% 0;
 	padding: 0;
