@@ -638,7 +638,7 @@
 
 	.pie {
 		background-image: url('../Img/fondoPieDesktop.png');
-		background-position: top left;
+		background-position: center left;
 		background-size: cover;
 		padding: 2% 0 2% 0;
 		max-width: 100% !important	;
@@ -672,10 +672,15 @@
 	.redes ul li {
 		font-size: 1rem;
 		margin-bottom: 0;
+		margin-right: 3%;
 		font-weight: 300;
 	}
 
-	.redesul li:nth-child(1) {
+	.redes ul li img {
+		width: 2.32rem;
+	}
+
+	.redes ul li:nth-child(1) {
 		width: 100%;
 	}
 }

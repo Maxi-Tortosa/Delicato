@@ -10,7 +10,8 @@
 }
 
 .seccionPrincipalMayoristas p,
-.seccionPrincipalMayoristas h3 {
+.seccionPrincipalMayoristas h3,
+.seccionPrincipalMayoristas ul li {
 	color: #333333;
 }
 
@@ -34,4 +35,35 @@
 
 .accordion-body p {
 	text-align: center;
+}
+
+/* --------------------------------------------------- ADAPTACIÓN DESKTOP -------------------------------------------------------- */
+
+@media screen and (min-width: 992px) {
+	.seccionPrincipalMayoristas {
+		margin: 0 auto 0 auto;
+		max-width: 1440px;
+		width: 90%;
+		padding: 5% 0 5% 0;
+	}
+	.seccionPrincipalMayoristas h3 {
+		margin: 2% 0 2% 7.5%;
+		text-align: left;
+	}
+
+	.seccionPrincipalMayoristas p {
+		margin: 0 0 1.5% 7.5%;
+	}
+	.seccionPrincipalMayoristas ul li {
+		font-weight: 400 !important;
+	}
+	.card p {
+		text-align: center;
+		margin: 0 10% 0 10%;
+	}
+
+	.card ul,
+	.card h2 {
+		color: #333333;
+	}
 }

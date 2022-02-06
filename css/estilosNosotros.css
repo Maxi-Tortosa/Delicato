@@ -1,6 +1,5 @@
 * {
 	font-family: 'Playfair Display', serif;
-	color: #333333;
 }
 
 /* --------------------------------------------------- MOBILE FIRST -------------------------------------------------------- */
@@ -26,6 +25,7 @@
 .textoNosotros h3,
 .textoNosotros p {
 	background-color: white;
+	color: #333333;
 }
 
 .textoNosotros h3 {
@@ -42,4 +42,38 @@
 	font-size: 1rem;
 	line-height: 1.25rem;
 	margin: 0 0 5.5% 0;
+}
+
+/* --------------------------------------------------- ADAPTACIÓN DESKTOP -------------------------------------------------------- */
+
+@media screen and (min-width: 992px) {
+	.seccionPrincipalNosotros {
+		display: flex;
+		flex-direction: row;
+		margin-top: 4.9rem;
+		max-width: 1440px;
+		width: 90%;
+	}
+	.bannerNosotros {
+		width: 49.3%;
+		height: auto;
+		background-image: url('../Img/fondoBannerNosotrosDesktop.png');
+		padding: 0;
+	}
+
+	.textoNosotros {
+		width: 50.7%;
+		padding: 3.8% 3.8% 3.8% 3.8%;
+		margin: 0 0;
+		background: none;
+	}
+
+	.textoNosotros p {
+		text-align: left;
+		margin: 0 0 7% 0;
+	}
+	.textoNosotros h3 {
+		text-align: left;
+		margin: 0 0 2.5% 0;
+	}
 }
