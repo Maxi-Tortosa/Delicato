@@ -33,7 +33,7 @@
 	text-align: justify;
 }
 
-.seccionPrincipalMayoristas h3:nth-child(6) {
+.seccionPrincipalMayoristas h3:nth-child(9) {
 	margin-top: 10%;
 }
 
@@ -73,5 +73,22 @@
 	.card ul,
 	.card h2 {
 		color: #333333;
+	}
+
+	.cardsGastronomicos {
+		justify-content: center;
+	}
+
+	.cardsGastronomicos .card {
+		width: 25%;
+	}
+
+	.cardsGastronomicos .card:nth-child(1),
+	.cardsGastronomicos .card:nth-child(2) {
+		margin-right: 8%;
+	}
+
+	.cardsGastronomicos .card img {
+		height: 30%;
 	}
 }
