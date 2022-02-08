@@ -244,7 +244,7 @@
 	border-color: #bdbdbd;
 	background: transparent;
 	margin: 0 auto 6% auto;
-	padding: 0;
+	padding: 1% 0;
 }
 
 .contacto form input:focus,
@@ -252,6 +252,7 @@
 	border: 2px solid #007336;
 	border-radius: 5px;
 	outline: none;
+	padding: 1%;
 }
 
 #contactoButton {
@@ -375,6 +376,11 @@
 
 	.navbar-nav li a {
 		font-family: 'Montserrat', sans-serif;
+	}
+
+	.navbar-nav li a:hover {
+		font-weight: 700;
+		font-size: 1.05rem;
 	}
 
 	.banner {
@@ -612,6 +618,15 @@
 		font-size: 0.875rem;
 		width: auto;
 		margin-right: 15%;
+		border: 3px solid #a10082;
+		background-color: #a10082;
+	}
+
+	#contactoButton:hover {
+		background-color: transparent;
+		border: 3px solid #a10082;
+		color: #a10082;
+		font-weight: 600;
 	}
 
 	/* Sucursales */
@@ -657,6 +672,11 @@
 		font-size: 1rem;
 	}
 
+	.menuPie ul li a:hover {
+		font-weight: 500;
+		font-size: 1.05rem;
+	}
+
 	.encontranos {
 		display: none;
 	}
@@ -678,6 +698,10 @@
 
 	.redes ul li img {
 		width: 2.32rem;
+	}
+
+	.redes ul li img:hover {
+		margin-top: -20px !important;
 	}
 
 	.redes ul li:nth-child(1) {
