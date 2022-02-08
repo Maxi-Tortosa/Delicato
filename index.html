@@ -601,16 +601,25 @@
 						Contanos tus dudas e inquietudes y<br class="salto" />te
 						responderemos a la brevedad.
 					</p>
-					<form action="">
+					<form
+						action="https://formsubmit.co/574cbbcc3e66842a2a899f00254fd475"
+						method="POST"
+					>
+						<input
+							type="hidden"
+							name="_subject"
+							value="Consulta Web Delicato"
+						/>
+						<input type="hidden" name="_captcha" value="false" />
+						<!-- <input type="hidden" name="_next" value="" />  CUANDO ESTÉ SUBIDO EL SITIO SE CONFIGURA-->
 						<label for="nombreApellido"></label>
 						<input
 							type="text"
 							name="nombreApellido"
 							placeholder="Nombre y Apellido"
-							id=""
 						/>
 						<label for="email"></label>
-						<input type="email" name="email" placeholder="Email" id="" />
+						<input type="email" name="email" placeholder="Email" />
 
 						<label for="mensaje"></label>
 						<textarea name="mensaje" rows="1" placeholder="Mensaje"></textarea>
@@ -676,6 +685,7 @@
 		</div>
 
 		<!-- Bootstrap -->
+		<script src="./app.js"></script>
 		<script
 			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
 			integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"

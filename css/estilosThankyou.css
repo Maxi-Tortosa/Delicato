@@ -1,0 +1,53 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.seccionPrincipal {
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.seccionPrincipal img {
+	margin-bottom: 2%;
+}
+
+.seccionPrincipal p:nth-child(2) {
+	font-size: 2.5rem;
+}
+
+.seccionPrincipal p:nth-child(3) {
+	font-size: 1.5rem;
+}
+
+.seccionPrincipal a {
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.5rem;
+	color: #70055b;
+	margin-top: 2%;
+}
+
+.footer {
+	height: 10vh;
+	width: 100%;
+	background-color: #70055b;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer img {
+	width: 2%;
+	margin: 1.5%;
+}
+
+.footer span a {
+	color: white;
+	font-size: 1rem;
+	text-decoration: none;
+}
