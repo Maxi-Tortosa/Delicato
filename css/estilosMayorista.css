@@ -81,6 +81,7 @@
 
 	.cardsGastronomicos .card {
 		width: 25%;
+		overflow: hidden;
 	}
 
 	.cardsGastronomicos .card:nth-child(1),
@@ -89,6 +90,6 @@
 	}
 
 	.cardsGastronomicos .card img {
-		height: 30%;
+		height: 20%;
 	}
 }
