@@ -84,6 +84,11 @@
 		overflow: hidden;
 	}
 
+	.cardsGastronomicos .card .card-body {
+		margin: 0;
+		padding: 10% 0 0 0;
+	}
+
 	.cardsGastronomicos .card:nth-child(1),
 	.cardsGastronomicos .card:nth-child(2) {
 		margin-right: 8%;
